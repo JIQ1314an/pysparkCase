@@ -7,9 +7,9 @@ from spotipy.oauth2 import SpotifyOAuth
 
 def get_song_data():
     # 设置spotipy应用接口参数   me
-    CLIENT_ID = "85abc35b96044909a7f9271e944604c7"
-    CLIENT_SECRET = "87da784091c94768997ba35ae54c995f"
-    REDIRECT_URI = "https://cn.bing.com/"
+    CLIENT_ID = "修改为自己的CLIENT_ID"
+    CLIENT_SECRET = "修改为自己的CLIENT_SECRET"
+    REDIRECT_URI = "https://cn.bing.com/"   # 修改为自己的REDIRECT_URI
     SCOPE = "user-library-read"
 
     # 获取SpotifyApi对象
@@ -96,12 +96,12 @@ class SpotifyApi:
 
         return self._add_other_features(spotipy_obj, tracks_df)
 
-
+# 本地测试
 if __name__ == "__main__":
     # 设置spotipy应用接口参数   me
-    CLIENT_ID = "85abc35b96044909a7f9271e944604c7"
-    CLIENT_SECRET = "87da784091c94768997ba35ae54c995f"
-    REDIRECT_URI = "https://cn.bing.com/"
+    CLIENT_ID = "修改为自己的CLIENT_ID"
+    CLIENT_SECRET = "修改为自己的CLIENT_SECRET"
+    REDIRECT_URI = "https://cn.bing.com/"   # 修改为自己的REDIRECT_URI
     SCOPE = "user-library-read"
 
     # 获取SpotifyApi对象
